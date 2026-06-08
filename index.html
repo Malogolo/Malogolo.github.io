@@ -55,16 +55,9 @@ h2.section-title{font-family:var(--serif);font-size:clamp(2rem,4vw,3.2rem);color
 
 /* ── ABOUT ── */
 #about{background:var(--cream);max-width:none;padding:5rem 2.5rem}
-#about .inner{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
+#about .inner{max-width:var(--max);margin:0 auto}
 .about-text p{color:var(--muted);margin-bottom:1.2rem;font-size:1rem}
 .about-text strong{color:var(--text);font-weight:600}
-.about-sidebar{}
-.info-block{border-top:1px solid var(--warm);padding:1rem 0}
-.info-block:first-child{border-top:none;padding-top:0}
-.info-label{font-family:var(--mono);font-size:.7rem;color:var(--faint);letter-spacing:.15em;text-transform:uppercase;margin-bottom:.35rem}
-.info-value{font-size:.95rem;color:var(--text)}
-.info-value a{color:var(--gold);text-decoration:none}
-.info-value a:hover{text-decoration:underline}
 
 /* ── COMPETENCES ── */
 #competences{background:var(--ink);max-width:none;padding:5rem 2.5rem;color:var(--paper)}
@@ -86,16 +79,17 @@ h2.section-title{font-family:var(--serif);font-size:clamp(2rem,4vw,3.2rem);color
 .ac-list{list-style:none}
 .ac-list li{padding:.5rem 0;border-bottom:1px solid rgba(255,255,255,.05);font-size:.95rem;color:#8c8578;display:grid;grid-template-columns:4rem 1fr;gap:1rem;align-items:start}
 .ac-list li .ac-id{font-family:var(--mono);font-size:.72rem;color:#4a4640}
-.ac-list li .ac-text{}
 .questions-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:1.5rem}
 .q-card{background:#0d0d0d;padding:1.5rem;border-top:2px solid rgba(255,255,255,.08)}
 .q-card .q-icon{font-size:.85rem;margin-bottom:.5rem;display:block;color:var(--gold)}
 .q-card p{font-size:.88rem;color:#6e6860;font-style:italic;line-height:1.6;margin-bottom:.5rem}
-.q-card .q-answer{font-size:.9rem;color:#9a9280;line-height:1.6}
+.q-card .q-answer{font-size:.9rem;color:#9a9280;line-height:1.7}
 
 /* ── PROJETS ── */
 #projets{background:var(--paper)}
-.projets-table{width:100%;border-collapse:collapse;margin-top:1rem}
+.table-subtitle{font-family:var(--serif);font-size:1.3rem;color:var(--ink);margin:2.5rem 0 .8rem}
+.table-badge{display:inline-block;font-family:var(--mono);font-size:.65rem;padding:.2rem .7rem;border-radius:2px;margin-left:.8rem;vertical-align:middle;background:var(--cream);color:var(--faint);border:1px solid var(--warm);letter-spacing:.08em}
+.projets-table{width:100%;border-collapse:collapse;margin-bottom:.5rem}
 .projets-table th{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);padding:.8rem 1rem;text-align:left;border-bottom:2px solid var(--warm);white-space:nowrap}
 .projets-table td{padding:.9rem 1rem;border-bottom:1px solid rgba(0,0,0,.07);font-size:.9rem;vertical-align:top}
 .projets-table tr:hover td{background:rgba(0,0,0,.03)}
@@ -109,15 +103,20 @@ h2.section-title{font-family:var(--serif);font-size:clamp(2rem,4vw,3.2rem);color
 .proj-link{font-family:var(--mono);font-size:.75rem;color:var(--gold);text-decoration:none;display:inline-flex;align-items:center;gap:.3rem}
 .proj-link:hover{text-decoration:underline}
 .proj-link::after{content:'↗';font-size:.65rem}
+.droopy-highlight td{background:rgba(184,134,11,.04) !important}
+.droopy-highlight:hover td{background:rgba(184,134,11,.08) !important}
 
 /* ── REFLEXIVITE ── */
 #reflexivite{background:var(--cream);max-width:none;padding:5rem 2.5rem}
 #reflexivite .inner{max-width:var(--max);margin:0 auto}
-.q-section{margin-bottom:3rem}
+.q-section{margin-bottom:3rem;padding-bottom:3rem;border-bottom:1px solid var(--warm)}
+.q-section:last-child{border-bottom:none}
 .q-section h3{font-family:var(--serif);font-size:1.4rem;color:var(--ink);margin-bottom:.3rem}
 .q-section .q-meta{font-family:var(--mono);font-size:.72rem;color:var(--faint);letter-spacing:.1em;margin-bottom:1rem}
 .q-section p{color:var(--muted);font-size:.95rem;line-height:1.75;margin-bottom:.8rem}
-.q-section ul{padding-left:1.2rem;color:var(--muted);font-size:.95rem;line-height:2}
+.q-section ul{padding-left:1.2rem;color:var(--muted);font-size:.95rem;line-height:2.1;margin-bottom:.8rem}
+.q-section ul li::marker{color:var(--gold)}
+.q-inline-tag{display:inline-block;font-family:var(--mono);font-size:.7rem;padding:.15rem .5rem;background:var(--paper);border:1px solid var(--warm);border-radius:2px;color:var(--muted);margin:0 .15rem;white-space:nowrap}
 
 /* ── CONTACT ── */
 #contact{background:var(--ink);max-width:none;padding:5rem 2.5rem}
@@ -129,7 +128,6 @@ h2.section-title{font-family:var(--serif);font-size:clamp(2rem,4vw,3.2rem);color
 .contact-item:hover{border-color:var(--gold)}
 .contact-item .c-label{font-family:var(--mono);font-size:.7rem;color:#4a4640;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.2rem}
 .contact-item .c-value{font-size:.9rem;color:#9a9280}
-.contact-right{}
 .contact-right p{color:#5a5448;font-size:.88rem;font-style:italic;line-height:1.8;margin-bottom:0}
 
 /* ── FOOTER ── */
@@ -139,7 +137,6 @@ footer p{font-family:var(--mono);font-size:.7rem;color:#3a3630;letter-spacing:.1
 /* ── RESPONSIVE ── */
 @media(max-width:900px){
   .comp-grid{grid-template-columns:1fr 1fr}
-  #about .inner{grid-template-columns:1fr}
   #contact .inner{grid-template-columns:1fr}
   .questions-grid{grid-template-columns:1fr}
 }
@@ -177,8 +174,8 @@ footer p{font-family:var(--mono);font-size:.7rem;color:#3a3630;letter-spacing:.1
     <h1 class="hero-name">Malo<br><em>Guillou</em></h1>
     <div class="hero-divider"></div>
     <p class="hero-sub">
-      Étudiant en <span>BUT Informatique</span> à l'IUT de Lannion.<br>
-      En recherche d'alternance en <span>cybersécurité</span>.
+      Étudiant en <span>BUT Informatique</span> à l'IUT de Vannes.<br>
+      En recherche d'alternance en <span>cybersécurité</span> pour 2026-2027.
     </p>
     <div class="hero-meta">
       <div class="hero-meta-item">
@@ -187,11 +184,11 @@ footer p{font-family:var(--mono);font-size:.7rem;color:#3a3630;letter-spacing:.1
       </div>
       <div class="hero-meta-item">
         <span class="label">IUT</span>
-        <span class="val">Lannion — Univ. Rennes</span>
+        <span class="val">Vannes — Univ. Bretagne Sud</span>
       </div>
       <div class="hero-meta-item">
         <span class="label">Objectif</span>
-        <span class="val">Alternance 2025-2026</span>
+        <span class="val">Alternance 2026-2027</span>
       </div>
     </div>
     <div class="hero-cta">
@@ -207,39 +204,9 @@ footer p{font-family:var(--mono);font-size:.7rem;color:#3a3630;letter-spacing:.1
     <div class="about-text">
       <div class="section-label">Présentation</div>
       <h2 class="section-title">Qui suis-je ?</h2>
-      <p>Je suis <strong>Malo Guillou</strong>, étudiant en deuxième année de BUT Informatique à l'IUT de Lannion. Ce portfolio présente mes compétences acquises et en cours d'acquisition dans le cadre du programme BUT Informatique, à travers mes SAÉ, mes projets et mon stage.</p>
-      <p>Passionné par la <strong>cybersécurité</strong>, je souhaite approfondir mes connaissances dans ce domaine lors de ma troisième année en alternance. Curieux et rigoureux, je m'efforce de combiner une approche technique solide avec une bonne capacité de travail en équipe.</p>
-      <p>Mon parcours : <strong>baccalauréat général avec mention</strong> → BUT Informatique 1ère année (autre IUT) → BUT Informatique 2ème année à Lannion.</p>
-    </div>
-    <div class="about-sidebar">
-      <div class="info-block">
-        <div class="info-label">Formation actuelle</div>
-        <div class="info-value">BUT Informatique, 2ème année<br>IUT de Lannion</div>
-      </div>
-      <div class="info-block">
-        <div class="info-label">Spécialisation visée</div>
-        <div class="info-value">Cybersécurité &amp; Réseaux</div>
-      </div>
-      <div class="info-block">
-        <div class="info-label">Recherche</div>
-        <div class="info-value">Alternance 2025-2026 (3ème année)</div>
-      </div>
-      <div class="info-block">
-        <div class="info-label">Email</div>
-        <div class="info-value"><a href="mailto:malo.guillou56@gmail.com">malo.guillou56@gmail.com</a></div>
-      </div>
-      <div class="info-block">
-        <div class="info-label">Téléphone</div>
-        <div class="info-value">07 67 72 22 06</div>
-      </div>
-      <div class="info-block">
-        <div class="info-label">LinkedIn</div>
-        <div class="info-value"><a href="https://linkedin.com/in/malo-guillou-24a441357" target="_blank">malo-guillou-24a441357</a></div>
-      </div>
-      <div class="info-block">
-        <div class="info-label">GitHub</div>
-        <div class="info-value"><a href="https://github.com/malogolo" target="_blank">github.com/malogolo</a></div>
-      </div>
+      <p>Je suis <strong>Malo Guillou</strong>, étudiant en deuxième année de BUT Informatique à l'IUT de Vannes. Ce portfolio présente mes compétences acquises et en cours d'acquisition, à travers ma SAÉ de 2ème année, mon stage, et mes projets de 1ère année.</p>
+      <p>Passionné par la <strong>cybersécurité</strong>, je prépare une troisième année en alternance dans ce domaine pour 2026-2027. La spécialisation est déjà engagée dans ma formation actuelle à travers les ressources dédiées aux réseaux, à la cryptographie et à la sécurité des systèmes.</p>
+      <p>Parcours : <strong>baccalauréat général avec mention</strong> → BUT Informatique 1ère année (IUT de Lannion) → BUT Informatique 2ème année à l'IUT de Vannes.</p>
     </div>
   </div>
 </section>
@@ -249,7 +216,7 @@ footer p{font-family:var(--mono);font-size:.7rem;color:#3a3630;letter-spacing:.1
   <div class="inner">
     <div class="section-label" style="color:var(--gold)">Compétences BUT</div>
     <h2 class="section-title" style="color:var(--paper);margin-bottom:1rem">Les 6 compétences du référentiel</h2>
-    <p style="font-size:.9rem;color:#5a5448;font-family:var(--mono);margin-bottom:2.5rem">Cliquez sur une compétence pour voir le détail des acquisitions et preuves.</p>
+    <p style="font-size:.9rem;color:#5a5448;font-family:var(--mono);margin-bottom:2.5rem">Cliquez sur une compétence pour voir le détail des acquisitions critiques et des preuves issues de la SAÉ Droopy et du stage.</p>
 
     <div class="comp-grid" id="compGrid">
 
@@ -296,11 +263,11 @@ footer p{font-family:var(--mono);font-size:.7rem;color:#3a3630;letter-spacing:.1
       </div>
     </div>
 
-    <!-- Détails des compétences -->
+    <!-- DETAIL C1 -->
     <div id="detail-1" class="comp-detail">
       <div class="detail-inner">
         <h3>Réaliser — Développement d'applications</h3>
-        <p style="font-size:.9rem;color:#6e6860;margin:.8rem 0 1.5rem">Développer — c'est-à-dire concevoir, coder, tester et intégrer — une solution informatique pour un client.</p>
+        <p style="font-size:.9rem;color:#6e6860;margin:.8rem 0 1.5rem">Développer, c'est-à-dire concevoir, coder, tester et intégrer une solution informatique pour un client.</p>
         <div class="detail-ac-label">Apprentissages critiques (BUT2)</div>
         <ul class="ac-list">
           <li><span class="ac-id">AC21.01</span><span class="ac-text">Élaborer et implémenter les spécifications fonctionnelles et non fonctionnelles à partir des exigences</span></li>
@@ -312,19 +279,20 @@ footer p{font-family:var(--mono);font-size:.7rem;color:#3a3630;letter-spacing:.1
         <p style="font-size:.88rem;color:#6e6860">R3.01 Développement web · R3.02 Développement efficace · R3.04 Qualité de développement · R4.01 Architecture logicielle · R4.02 Qualité de développement</p>
         <div class="questions-grid">
           <div class="q-card">
-            <span class="q-icon">Démarche &amp; autonomie</span>
-            <p>Comment ai-je conduit mes développements cette année ?</p>
-            <div class="q-answer">À compléter : décrivez vos choix techniques, votre organisation (méthode agile, tests, revue de code), et votre niveau d'autonomie dans les SAÉ et le stage.</div>
+            <span class="q-icon">Démarche &amp; autonomie — SAÉ Droopy</span>
+            <p>Comment ai-je conduit mon développement sur ce projet ?</p>
+            <div class="q-answer">J'ai pris en charge trois fonctionnalités précises : la gestion de l'état <em>pending</em> des modules (un module attend que ses dépendances soient chargées ou mises à jour), l'affichage des informations d'un module, et le verrouillage d'un module actuellement utilisé pour empêcher son déchargement intempestif. J'ai d'abord lu l'architecture existante de Droopy pour comprendre le cycle de vie des modules, puis j'ai implémenté chaque fonctionnalité indépendamment avant de l'intégrer. Les décisions d'implémentation (structure de l'état, conditions de transition) ont été prises de façon autonome, puis validées avec le groupe.</div>
           </div>
           <div class="q-card">
             <span class="q-icon">Preuves &amp; traces</span>
             <p>Quelles traces justifient la maîtrise de ces AC ?</p>
-            <div class="q-answer">À compléter : ajoutez des liens vers votre GitHub, captures d'écran, rapports de tests, extraits de code ou documents de conception.</div>
+            <div class="q-answer">Code C sur STM32 pour la machine d'états des modules (état pending, transitions chargé/suspendu/en cours de mise à jour) · documentation Doxygen des fonctions implémentées · commits identifiés dans le dépôt du projet · rapport technique de la SAÉ décrivant les choix d'implémentation.</div>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- DETAIL C2 -->
     <div id="detail-2" class="comp-detail">
       <div class="detail-inner">
         <h3>Optimiser — Algorithmes &amp; performance</h3>
@@ -337,22 +305,23 @@ footer p{font-family:var(--mono);font-size:.7rem;color:#3a3630;letter-spacing:.1
           <li><span class="ac-id">AC22.04</span><span class="ac-text">Évaluer l'impact environnemental et sociétal des solutions proposées</span></li>
         </ul>
         <div class="detail-ac-label">Ressources mobilisées</div>
-        <p style="font-size:.88rem;color:#6e6860">R3.02 Développement efficace · R3.03 Analyse · R4.04 Méthodes d'optimisation · R4.05 Anglais (lectures techniques)</p>
+        <p style="font-size:.88rem;color:#6e6860">R3.02 Développement efficace · R3.03 Analyse · R4.04 Méthodes d'optimisation · R4.05 Anglais (documentation technique Droopy en anglais)</p>
         <div class="questions-grid">
           <div class="q-card">
-            <span class="q-icon">Démarche &amp; autonomie</span>
-            <p>Comment ai-je abordé l'optimisation cette année ?</p>
-            <div class="q-answer">À compléter : décrivez les choix d'algorithmes, les benchmarks réalisés, les arbitrages performance/lisibilité.</div>
+            <span class="q-icon">Démarche &amp; autonomie — SAÉ Droopy</span>
+            <p>Quels choix d'optimisation ai-je faits sur ce projet ?</p>
+            <div class="q-answer">Le contexte embarqué (MCU STM32, mémoire flash limitée) imposait des contraintes fortes. La gestion de l'état pending devait être légère : j'ai choisi une représentation par champ de bits sur un octet plutôt qu'une structure plus lourde. L'allocateur mémoire de Droopy utilise une stratégie best-fit que j'ai dû prendre en compte pour ne pas introduire de fragmentation supplémentaire lors du chargement de modules en attente.</div>
           </div>
           <div class="q-card">
             <span class="q-icon">Preuves &amp; traces</span>
             <p>Quelles traces justifient la maîtrise de ces AC ?</p>
-            <div class="q-answer">À compléter : SAÉ 2.02, profils de performance, comparaisons algorithmiques, code annoté.</div>
+            <div class="q-answer">Code C commenté montrant les structures de données choisies · section du rapport expliquant les contraintes mémoire du STM32 et les arbitrages réalisés · documentation Doxygen des fonctions du Module Manager.</div>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- DETAIL C3 -->
     <div id="detail-3" class="comp-detail">
       <div class="detail-inner">
         <h3>Administrer — Systèmes &amp; réseaux</h3>
@@ -364,22 +333,23 @@ footer p{font-family:var(--mono);font-size:.7rem;color:#3a3630;letter-spacing:.1
           <li><span class="ac-id">AC23.03</span><span class="ac-text">Sécuriser les services et données d'un système</span></li>
         </ul>
         <div class="detail-ac-label">Ressources mobilisées</div>
-        <p style="font-size:.88rem;color:#6e6860">R3.05 Programmation système · R3.06 Architecture des réseaux · R4.08 Virtualisation · R4.10 Cryptographie · R4.11 Réseau avancé · R4.12 Sécurité système</p>
+        <p style="font-size:.88rem;color:#6e6860">R3.05 Programmation système · R3.06 Architecture des réseaux · R4.08 Virtualisation · R4.10 Cryptographie · R4.11 Réseau avancé · R4.12 Sécurité système et réseaux</p>
         <div class="questions-grid">
           <div class="q-card">
-            <span class="q-icon">Démarche &amp; autonomie</span>
-            <p>Comment ai-je abordé l'administration système ?</p>
-            <div class="q-answer">À compléter : SAÉ 2.03 serveur Apache, SAÉ déploiement Docker, configurations réseau, procédures mises en place.</div>
+            <span class="q-icon">Démarche &amp; autonomie — SAÉ Droopy</span>
+            <p>Quelle dimension système/réseau ai-je abordée ?</p>
+            <div class="q-answer">Droopy repose sur LoRaWAN et The Things Network (TTN) pour la communication entre le capteur STM32 et le serveur de mise à jour. J'ai dû comprendre cette chaîne de communication pour saisir comment les mises à jour (FUOTA) arrivent jusqu'au module. La sécurisation des modules par checksum SHA1 et signature RSA est au cœur du projet, en lien direct avec AC23.03. À compléter avec les éléments de votre stage.</div>
           </div>
           <div class="q-card">
             <span class="q-icon">Preuves &amp; traces</span>
             <p>Quelles traces justifient la maîtrise de ces AC ?</p>
-            <div class="q-answer">À compléter : fichiers de configuration, captures d'architecture réseau, scripts d'installation, rapport de sécurisation.</div>
+            <div class="q-answer">Schéma d'architecture Droopy (LoRaWAN → TTN → Update Provider → MCU) · code du composant Update Manager vérifiant intégrité et authenticité · rapport de stage à ajouter.</div>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- DETAIL C4 -->
     <div id="detail-4" class="comp-detail">
       <div class="detail-inner">
         <h3>Gérer — Données &amp; bases de données</h3>
@@ -392,22 +362,23 @@ footer p{font-family:var(--mono);font-size:.7rem;color:#3a3630;letter-spacing:.1
           <li><span class="ac-id">AC24.04</span><span class="ac-text">Manipuler des données hétérogènes</span></li>
         </ul>
         <div class="detail-ac-label">Ressources mobilisées</div>
-        <p style="font-size:.88rem;color:#6e6860">R3.07 SQL · R3.08 Probabilités · R3.09 Cryptographie · R3.10 Management des systèmes · R4.03 Qualité au-delà du relationnel</p>
+        <p style="font-size:.88rem;color:#6e6860">R3.07 SQL · R3.08 Probabilités · R3.09 Cryptographie et sécurité · R3.10 Management des systèmes · R4.03 Qualité au-delà du relationnel</p>
         <div class="questions-grid">
           <div class="q-card">
-            <span class="q-icon">Démarche &amp; autonomie</span>
-            <p>Comment ai-je géré les données dans mes projets ?</p>
-            <div class="q-answer">À compléter : SAÉ 1.04 BDD football, SAÉ 2.04 Parcoursup, modélisations, procédures stockées, sécurisation des accès.</div>
+            <span class="q-icon">Démarche &amp; autonomie — SAÉ Droopy</span>
+            <p>Quelle gestion des données dans ce projet ?</p>
+            <div class="q-answer">Droopy stocke les modules en flash via LittleFS avec un système de rollback : avant toute mise à jour, la version courante est conservée et n'est écrasée qu'en cas de succès. J'ai contribué à l'affichage des informations d'un module (ID, version, checksum, dépendances) en lisant et interprétant le manifeste binaire de 100 octets structuré en champs fixes. C'est une manipulation de données hétérogènes (entiers, tableaux de bytes, flags) directement en mémoire flash. À compléter avec les éléments de votre stage.</div>
           </div>
           <div class="q-card">
             <span class="q-icon">Preuves &amp; traces</span>
             <p>Quelles traces justifient la maîtrise de ces AC ?</p>
-            <div class="q-answer">À compléter : scripts SQL, schémas MCD/MLD, requêtes complexes, rapports de performance de requêtes.</div>
+            <div class="q-answer">Code C de parsing du manifeste de module (100B : type, ID, version, checksum SHA1, signature, dépendances) · captures d'affichage des infos d'un module sur terminal · SAÉ 1.04 et 2.04 (BDD football et Parcoursup) comme preuves complémentaires de BUT1.</div>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- DETAIL C5 -->
     <div id="detail-5" class="comp-detail">
       <div class="detail-inner">
         <h3>Conduire — Gestion de projet</h3>
@@ -420,22 +391,23 @@ footer p{font-family:var(--mono);font-size:.7rem;color:#3a3630;letter-spacing:.1
           <li><span class="ac-id">AC25.04</span><span class="ac-text">Définir et mettre en œuvre une démarche de suivi de projet</span></li>
         </ul>
         <div class="detail-ac-label">Ressources mobilisées</div>
-        <p style="font-size:.88rem;color:#6e6860">R3.11 Droit des contrats · R3.12 Anglais · R4.07 Projet personnel et professionnel · R4.09 Management avancé · R4.02 Qualité de développement</p>
+        <p style="font-size:.88rem;color:#6e6860">R3.11 Droit des contrats du numérique · R3.12 Anglais · R4.07 Projet personnel et professionnel · R4.09 Management avancé des SI · R4.02 Qualité de développement</p>
         <div class="questions-grid">
           <div class="q-card">
-            <span class="q-icon">Démarche &amp; autonomie</span>
-            <p>Comment ai-je conduit les projets cette année ?</p>
-            <div class="q-answer">À compléter : SAÉ 2.05 gestion de projet, outils utilisés (Gantt, Trello, Git), méthodes agiles, gestion des risques et du temps.</div>
+            <span class="q-icon">Démarche &amp; autonomie — SAÉ Droopy</span>
+            <p>Comment le projet a-t-il été organisé et suivi ?</p>
+            <div class="q-answer">Le projet Droopy était un projet de reprise : nous sommes partis d'une base existante documentée dans un article de recherche IEEE (DCOSS-IoT 2025), ce qui impliquait de comprendre des spécifications formelles en anglais avant de coder. Les tâches ont été réparties entre les 6 membres au fil du projet. J'ai pris en charge les fonctionnalités liées à l'état pending et à l'affichage des modules de façon autonome, en assurant la cohérence avec l'architecture globale. À compléter avec les éléments de votre stage.</div>
           </div>
           <div class="q-card">
             <span class="q-icon">Preuves &amp; traces</span>
             <p>Quelles traces justifient la maîtrise de ces AC ?</p>
-            <div class="q-answer">À compléter : plans de projet, comptes-rendus, livrables, rétroplannings, cahiers des charges.</div>
+            <div class="q-answer">Répartition des tâches dans le wiki du projet · historique Git (commits nominatifs) · rapport technique de la SAÉ · rapport de stage à ajouter.</div>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- DETAIL C6 -->
     <div id="detail-6" class="comp-detail">
       <div class="detail-inner">
         <h3>Collaborer — Travail en équipe</h3>
@@ -448,17 +420,17 @@ footer p{font-family:var(--mono);font-size:.7rem;color:#3a3630;letter-spacing:.1
           <li><span class="ac-id">AC26.04</span><span class="ac-text">Comprendre la diversité, la créativité et l'hétérogénéité des équipes</span></li>
         </ul>
         <div class="detail-ac-label">Ressources mobilisées</div>
-        <p style="font-size:.88rem;color:#6e6860">R3.12 Anglais · R3.13 Communication professionnelle · R3.14 Projet personnel · R4.05 Anglais · R4.06 Communication interne</p>
+        <p style="font-size:.88rem;color:#6e6860">R3.12 Anglais · R3.13 Communication professionnelle · R3.14 Projet personnel et professionnel · R4.05 Anglais · R4.06 Communication interne</p>
         <div class="questions-grid">
           <div class="q-card">
-            <span class="q-icon">Démarche &amp; autonomie</span>
-            <p>Comment ai-je contribué aux équipes cette année ?</p>
-            <div class="q-answer">À compléter : SAÉ 2.06 teambuilding, rôles pris en équipe, outils collaboratifs (Git, Slack), difficultés rencontrées et solutions.</div>
+            <span class="q-icon">Démarche &amp; autonomie — SAÉ Droopy</span>
+            <p>Comment ai-je collaboré dans cette équipe de 6 ?</p>
+            <div class="q-answer">L'équipe fonctionnait sans rôles figés : chacun prenait des tâches de développement et de documentation. J'ai rédigé la documentation Doxygen de mes fonctions, contribué au README et au mini wiki partagé, et participé à la rédaction du rapport technique. La communication s'est faite entièrement en lien avec un projet en anglais, ce qui a nécessité de lire et produire de la documentation technique dans cette langue dès le départ.</div>
           </div>
           <div class="q-card">
             <span class="q-icon">Preuves &amp; traces</span>
             <p>Quelles traces justifient la maîtrise de ces AC ?</p>
-            <div class="q-answer">À compléter : historique de commits, retours de pairs, présentations orales, vidéos de projets, rapports collectifs.</div>
+            <div class="q-answer">Historique Git avec commits nominatifs · documentation Doxygen produite · pages wiki rédigées · rapport collectif de la SAÉ · rapport de stage (communication avec tuteur, rendus écrits) à ajouter.</div>
           </div>
         </div>
       </div>
@@ -471,6 +443,48 @@ footer p{font-family:var(--mono);font-size:.7rem;color:#3a3630;letter-spacing:.1
 <section id="projets" class="reveal">
   <div class="section-label">Projets &amp; SAÉ</div>
   <h2 class="section-title">Situations d'apprentissage</h2>
+
+  <!-- SAÉ BUT2 -->
+  <h3 class="table-subtitle">BUT 2ème année — IUT de Vannes <span class="table-badge">2024-2025</span></h3>
+  <table class="projets-table">
+    <thead>
+      <tr>
+        <th>SAÉ</th>
+        <th>Titre</th>
+        <th>Technologies</th>
+        <th>Compétences</th>
+        <th>Lien</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="droopy-highlight">
+        <td><span style="font-family:var(--mono);font-size:.8rem">SAÉ BUT2</span></td>
+        <td>
+          <strong>Droopy</strong> — Plateforme embarquée de mise à jour modulaire de firmware<br>
+          <span style="font-family:var(--mono);font-size:.75rem;color:var(--faint)">Contributions : état pending des modules · affichage des infos d'un module · verrouillage d'un module en cours d'utilisation · documentation (Doxygen, README, wiki, rapport)</span>
+        </td>
+        <td>
+          <span class="proj-tag tag-nav">C</span>
+          <span class="proj-tag tag-nav">STM32</span>
+          <span class="proj-tag tag-grn">LoRaWAN</span>
+          <span class="proj-tag tag-blk">VSCode</span>
+          <span class="proj-tag tag-blk">Doxygen</span>
+        </td>
+        <td>
+          <span class="proj-tag tag-red">Réaliser</span>
+          <span class="proj-tag tag-ora">Optimiser</span>
+          <span class="proj-tag tag-yel">Administrer</span>
+          <span class="proj-tag tag-grn">Gérer</span>
+          <span class="proj-tag tag-blk">Conduire</span>
+          <span class="proj-tag tag-blk">Collaborer</span>
+        </td>
+        <td><a href="https://github.com/malogolo" target="_blank" class="proj-link">GitHub</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- SAÉ BUT1 -->
+  <h3 class="table-subtitle" style="margin-top:3rem">BUT 1ère année — IUT de Lannion <span class="table-badge">2023-2024</span></h3>
   <table class="projets-table">
     <thead>
       <tr>
@@ -491,7 +505,7 @@ footer p{font-family:var(--mono);font-size:.7rem;color:#3a3630;letter-spacing:.1
       </tr>
       <tr>
         <td><span style="font-family:var(--mono);font-size:.8rem">SAÉ 1.02</span></td>
-        <td>Comparaison d'approches algorithmiques — Snake auto</td>
+        <td>Comparaison d'approches algorithmiques — Snake automatisé</td>
         <td><span class="proj-tag tag-nav">C</span></td>
         <td><span class="proj-tag tag-ora">Optimiser</span></td>
         <td><a href="https://github.com/malogolo/snakeauto" target="_blank" class="proj-link">GitHub</a></td>
@@ -575,39 +589,60 @@ footer p{font-family:var(--mono);font-size:.7rem;color:#3a3630;letter-spacing:.1
   <div class="inner reveal">
     <div class="section-label">Analyse réflexive</div>
     <h2 class="section-title">Questions du portfolio</h2>
-    <p style="color:var(--muted);margin-bottom:3rem;font-size:.95rem">Pour chaque SAÉ ou stage, le portfolio demande une réflexion structurée selon 4 axes. Les réponses ci-dessous sont à personnaliser avec vos propres expériences.</p>
+    <p style="color:var(--muted);margin-bottom:3rem;font-size:.95rem">Analyse de la SAÉ Droopy (BUT 2ème année). Les réponses relatives au stage seront complétées ultérieurement.</p>
 
     <div class="q-section">
-      <h3>1. Démarches, prises de décisions et autonomie</h3>
-      <div class="q-meta">À compléter — max 1 page par SAÉ / stage</div>
-      <p>Décrivez ici vos démarches concrètes pour chaque SAÉ ou lors de votre stage/alternance : comment avez-vous organisé votre travail ? Quelles décisions avez-vous prises de manière autonome ? Quand avez-vous sollicité de l'aide et pourquoi ?</p>
-      <p><em>Exemple attendu :</em> Pour la SAÉ 2.01, j'ai choisi d'utiliser une architecture MVC en Java car… J'ai décidé seul de… En revanche, j'ai demandé conseil à mon tuteur pour…</p>
+      <h3>1. Démarches, prises de décisions et implication</h3>
+      <div class="q-meta">SAÉ Droopy — BUT 2ème année</div>
+      <p>Le projet Droopy était une reprise et une amélioration d'une plateforme existante de mise à jour modulaire de firmware embarqué. Avant d'écrire la moindre ligne de code, j'ai passé un temps significatif à comprendre l'architecture : six composants (Bootstrapper, Module Manager, Dynamic Loader, Memory Allocator, Update Manager, Update Provider), chacun indépendant, avec un cycle de vie précis pour chaque module. La difficulté était de partir de zéro sur un projet de recherche universitaire publié, avec une documentation en anglais et une base de code C conséquente.</p>
+      <p>Une fois l'architecture assimilée, j'ai pris en charge trois fonctionnalités de façon autonome :</p>
+      <ul>
+        <li><strong>L'état pending des modules</strong> : un module qui dépend d'autres modules non encore chargés ou mis à jour doit attendre. J'ai défini les conditions de transition vers cet état et implémenté la logique correspondante dans le Module Manager.</li>
+        <li><strong>L'affichage des informations d'un module</strong> : lecture et présentation du manifeste binaire de 100 octets de chaque module (type, ID, version, checksum SHA1, signature, dépendances).</li>
+        <li><strong>Le verrouillage d'un module en cours d'utilisation</strong> : empêcher qu'un module actuellement actif soit déchargé, avec une vérification de son état avant toute opération de déchargement.</li>
+      </ul>
+      <p>Pour chaque fonctionnalité, j'ai d'abord rédigé une description informelle du comportement attendu, discutée avec le groupe, avant de passer à l'implémentation. Les choix techniques (représentation de l'état, conditions de verrouillage) ont été pris de façon autonome puis revus collectivement.</p>
     </div>
 
     <div class="q-section">
       <h3>2. Ressources choisies et combinées</h3>
-      <div class="q-meta">À compléter — max 1 page par SAÉ / stage</div>
-      <p>Quelles ressources (cours, documentation, tutoriels, outils, personnes) avez-vous mobilisées pour réaliser vos tâches ? Comment les avez-vous combinées ? Lesquelles se sont révélées les plus utiles et pourquoi ?</p>
+      <div class="q-meta">SAÉ Droopy — BUT 2ème année</div>
+      <p>Ce projet m'a demandé de combiner des ressources très différentes, car l'environnement était entièrement nouveau :</p>
       <ul>
-        <li>Ressources de cours mobilisées (indiquer les références : R3.xx, R4.xx)</li>
-        <li>Documentation externe, tutoriels, StackOverflow, etc.</li>
-        <li>Personnes ressources (enseignants, tuteur de stage, camarades)</li>
+        <li><span class="q-inline-tag">R4.01 Architecture logicielle</span> pour comprendre la décomposition en modules indépendants et les interfaces entre composants.</li>
+        <li><span class="q-inline-tag">R4.10 Cryptographie</span> et <span class="q-inline-tag">R3.09 Cryptographie et sécurité</span> pour appréhender la signature RSA et le checksum SHA1 intégrés dans le manifeste de chaque module.</li>
+        <li><span class="q-inline-tag">R3.05 Programmation système</span> pour manipuler la mémoire flash, les structures de bas niveau et le code embarqué C.</li>
+        <li><span class="q-inline-tag">R4.05 Anglais</span> indispensable : l'intégralité de la documentation, de l'article de référence et des commentaires de code étaient en anglais. C'était une contrainte majeure en début de projet.</li>
       </ul>
+      <p>En dehors des ressources de cours, j'ai utilisé la documentation officielle de STM32CubeIDE et STM32CubeProgrammer, le dépôt GitHub d'Udynlink (le loader dynamique intégré à Droopy), et l'article IEEE publié par l'équipe de recherche de l'IUT. Les échanges avec les enseignants encadrants et avec mes coéquipiers ont été essentiels pour débloquer des points d'incompréhension sur l'architecture initiale.</p>
     </div>
 
     <div class="q-section">
       <h3>3. Justification de la maîtrise des apprentissages visés</h3>
-      <div class="q-meta">À compléter — max 1 page par SAÉ / stage — s'appuyer sur des traces</div>
-      <p>En vous appuyant sur des preuves concrètes (code, rapports, captures, résultats de tests), justifiez que vous avez atteint les apprentissages critiques visés et pris en compte les composantes essentielles.</p>
-      <p><em>Pour chaque AC visée, donnez au moins une preuve observable :</em> "Pour AC21.03 (bonnes pratiques de programmation), j'ai mis en place des tests unitaires JUnit — voir <a href="https://github.com/malogolo" style="color:var(--gold)">ce commit</a>."</p>
+      <div class="q-meta">SAÉ Droopy — preuves par AC</div>
+      <p>Voici les preuves que je peux mobiliser pour chaque apprentissage critique visé :</p>
+      <ul>
+        <li><strong>AC21.01 (spécifications fonctionnelles)</strong> : description écrite de l'état pending et de ses transitions, intégrée au wiki du projet avant implémentation.</li>
+        <li><strong>AC21.03 (bonnes pratiques de programmation)</strong> : code C annoté avec Doxygen, fonctions de taille réduite et à responsabilité unique, commentaires explicatifs sur les conditions de verrouillage.</li>
+        <li><strong>AC22.01 (structures de données adaptées)</strong> : choix d'une représentation compacte de l'état du module, cohérente avec les contraintes mémoire du MCU STM32.</li>
+        <li><strong>AC24.04 (données hétérogènes)</strong> : parsing du manifeste binaire de 100 octets, combinant des entiers, des tableaux de bytes (SHA1, signature RSA), et des champs de flags.</li>
+        <li><strong>AC26.02 (communication collaborative)</strong> : rédaction de documentation Doxygen, de pages wiki et participation au rapport collectif, en anglais et en français.</li>
+      </ul>
+      <p>Les preuves sont consultables dans le dépôt GitHub du projet (commits nominatifs, fichiers de documentation) et dans le rapport technique de la SAÉ.</p>
     </div>
 
     <div class="q-section">
       <h3>4. Ressources manquantes et ce que je changerais</h3>
-      <div class="q-meta">À compléter — max 1 page par SAÉ / stage</div>
-      <p>Quelles ressources (connaissances, outils, compétences) vous ont manqué pour atteindre pleinement la compétence visée ? Si c'était à refaire, que changeriez-vous dans votre approche ?</p>
-      <p><em>Exemple :</em> Il m'a manqué des connaissances en sécurisation des APIs REST. Si c'était à refaire, je commencerais par établir un cahier des charges plus précis avant de coder, et je prévoirais plus de temps pour les tests.</p>
+      <div class="q-meta">SAÉ Droopy — retour critique</div>
+      <p>Trois lacunes principales ont ralenti mon travail :</p>
+      <ul>
+        <li><strong>Le C embarqué bas niveau</strong> : j'avais peu pratiqué le C avant ce projet, et encore moins dans un contexte MCU (gestion directe de la mémoire flash, pointeurs sur des adresses matérielles, absence de librairie standard complète). Il m'a fallu du temps pour être à l'aise.</li>
+        <li><strong>L'anglais technique</strong> : lire un article de conférence IEEE et comprendre une documentation d'architecture en anglais était difficile en début de projet. J'ai progressé, mais une meilleure base initiale m'aurait permis d'aller plus vite.</li>
+        <li><strong>Les notions d'architecture logicielle modulaire</strong> : les concepts de chargement dynamique, de résolution de symboles à l'exécution (Udynlink) et d'allocation mémoire best-fit n'étaient pas des notions maîtrisées. Elles sont venues en pratiquant.</li>
+      </ul>
+      <p>Si c'était à refaire, je consacrerais une semaine entière à lire et annoter l'article de référence et le code existant <em>avant</em> de toucher au code. J'aurais aussi proposé plus tôt une réunion d'équipe pour cartographier ensemble les interfaces entre composants, ce qui aurait évité quelques malentendus sur les responsabilités de chaque module.</p>
     </div>
+
   </div>
 </section>
 
@@ -616,8 +651,8 @@ footer p{font-family:var(--mono);font-size:.7rem;color:#3a3630;letter-spacing:.1
   <div class="inner">
     <div>
       <div class="section-label" style="color:var(--gold)">Me contacter</div>
-      <h2 class="section-title">Discutons de votre projet</h2>
-      <p>Disponible pour une alternance en cybersécurité à partir de 2025-2026. N'hésitez pas à me contacter.</p>
+      <h2 class="section-title">Discutons</h2>
+      <p>Disponible pour une alternance en cybersécurité à partir de septembre 2026. N'hésitez pas à me contacter.</p>
       <div class="contact-links">
         <a href="mailto:malo.guillou56@gmail.com" class="contact-item">
           <div>
@@ -653,15 +688,15 @@ footer p{font-family:var(--mono);font-size:.7rem;color:#3a3630;letter-spacing:.1
     </div>
     <div class="contact-right">
       <p style="font-family:var(--serif);font-size:1.4rem;color:var(--warm);line-height:1.5;font-style:italic;margin-bottom:2rem">"La cybersécurité n'est pas un produit, c'est un processus."<br><span style="font-size:.85rem;font-family:var(--mono);color:#4a4640;font-style:normal">— Bruce Schneier</span></p>
-      <p style="font-size:.88rem;color:#4a4640;line-height:1.8">Ce portfolio est hébergé comme site statique HTML. Il présente mon parcours en BUT Informatique et mes compétences développées à travers les SAÉ et les projets personnels.</p>
-      <p style="font-size:.82rem;color:#3a3630;margin-top:1rem;font-family:var(--mono)">— Lannion, 2025</p>
+      <p style="font-size:.88rem;color:#4a4640;line-height:1.8">Ce portfolio présente mon parcours en BUT Informatique et les compétences développées à travers la SAÉ Droopy, mon stage, et les projets de première année.</p>
+      <p style="font-size:.82rem;color:#3a3630;margin-top:1rem;font-family:var(--mono)">— Vannes, 2025</p>
     </div>
   </div>
 </section>
 
 <footer>
   <p>© 2025 Malo Guillou — Portfolio BUT Informatique</p>
-  <p>IUT de Lannion — Université de Rennes</p>
+  <p>IUT de Vannes — Université Bretagne Sud</p>
 </footer>
 
 <script>
